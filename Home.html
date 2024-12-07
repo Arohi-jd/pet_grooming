@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pet Grooming</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/Pet_grooming_logo-removebg-preview.png" alt="Logo" width="200px">
+        </div>
+        <ul class="nav-links" type="button">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#login">Log In</a></li>
+        </ul>
+    </nav>
+
+    <div class="front-pic">
+        <img src="images/shutterstock_184908566 copy.png" height="600px" id="realistic-image">
+    </div>
+
+    <div class="first-content">
+        <h1>The  Best  Pet</h1>
+        <h1>Grommers</h1>
+        <h1>in Town</h1>
+        <p id="para">For a pawfect look and feel</p>
+    </div>
+
+  
+    <button id="appointment-btn" class="appointment-btn">Book Appointment</button>
+
+    <!-- Appointment Form (Initially Hidden) -->
+    <div id="appointment-form" class="form-container" style="display: none;">
+        <!-- Close Button (Top Right Corner) -->
+        <span class="close-btn" id="close-btn">&times;</span>
+        <h2 style="text-align:center;color:rgb(202, 7, 7)">Book an Appointment</h2>
+        <form action="#" method="post">
+            <!-- Owner Name (Required) -->
+            <label for="owner-name">Owner Name: <span class="required">*</span></label>
+            <input type="text" id="owner-name" name="owner-name" required>
+
+            <!-- Contact Number (Required) -->
+            <label for="contact-number">Contact Number: <span class="required">*</span></label>
+            <input type="tel" id="contact-number" name="contact-number" required>
+
+            <!-- Email (Required) -->
+            <label for="email">Email: <span class="required">*</span></label>
+            <input type="email" id="email" name="email" required>
+
+            <!-- Choose Pet -->
+            <label for="choose-pet">Choose Pet:</label>
+            <select id="choose-pet" name="choose-pet" required>
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="other">Other</option>
+            </select>
+
+            <!-- Breed -->
+            <label for="breed">Breed (Type):</label>
+            <input type="text" id="breed" name="breed">
+
+            <!-- Date -->
+            <label for="date">Appointment Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Time -->
+            <label for="time">Appointment Time:</label>
+            <input type="time" id="time" name="time" required>
+
+            <!-- Payment Option -->
+            <label for="payment-option">Payment Method:</label>
+            <select id="payment-option" name="payment-option" required>
+                <option value="cash">Pay by Cash</option>
+                <option value="card">Pay by Card</option>
+            </select>
+
+            <!-- Submit Button -->
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+
+    <!-- JavaScript to Show and Close Form -->
+    <script src="script.js"></script>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="second-content">
+        <h1>Your Pet deserves</h1>
+        <h1>to be pampered!</h1>
+
+
+    </div>
+
+    
+
+
+    <div class="slider-container">
+        <!-- Radio inputs for control -->
+        <input type="radio" name="slider" id="video1" checked>
+        <input type="radio" name="slider" id="video2">
+        <input type="radio" name="slider" id="video3">
+      
+        <!-- The slides containing videos -->
+        <div class="slides slider">
+          <video autoplay loop muted>
+            <source src="https://videos.pexels.com/video-files/6132705/6132705-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      
+          <video autoplay loop muted>
+            <source src="https://videos.pexels.com/video-files/6131723/6131723-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+      
+          <video autoplay loop muted>
+            <source src="https://videos.pexels.com/video-files/6131727/6131727-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      
+        <!-- Instagram-style slider dots -->
+        <div class="nav">
+          <label for="video1"></label>
+          <label for="video2"></label>
+          <label for="video3"></label>
+        </div>
+      </div>
+    
+
+
+    
+</body>
+</html>
