@@ -35,7 +35,6 @@
   
     <button id="appointment-btn" class="appointment-btn">Book Appointment</button>
 
-    <!-- Appointment Form (Initially Hidden) -->
     <div id="appointment-form" class="form-container" style="display: none;">
         <!-- Close Button (Top Right Corner) -->
         <span class="close-btn" id="close-btn">&times;</span>
@@ -62,7 +61,7 @@
             </select>
 
             <!-- Breed -->
-            <label for="breed">Breed (Type):</label>
+            <label for="breed">Breed:</label>
             <input type="text" id="breed" name="breed">
 
             <!-- Date -->
@@ -85,7 +84,6 @@
         </form>
     </div>
 
-    <!-- JavaScript to Show and Close Form -->
     <script src="script.js"></script>
 
 
@@ -100,16 +98,11 @@
 
     </div>
 
-    
-
-
     <div class="slider-container">
-        <!-- Radio inputs for control -->
         <input type="radio" name="slider" id="video1" checked>
         <input type="radio" name="slider" id="video2">
         <input type="radio" name="slider" id="video3">
       
-        <!-- The slides containing videos -->
         <div class="slides slider">
           <video autoplay loop muted>
             <source src="https://videos.pexels.com/video-files/6132705/6132705-uhd_3840_2160_25fps.mp4" type="video/mp4">
@@ -127,7 +120,6 @@
           </video>
         </div>
       
-        <!-- Instagram-style slider dots -->
         <div class="nav">
           <label for="video1"></label>
           <label for="video2"></label>
