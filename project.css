@@ -1,35 +1,132 @@
 *{
-    margin:0;
-    padding:0;
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.hero{
+    /* background-color:yellow ; */
+    overflow: hidden;
 }
-body{
-    background-image: url(kutta.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width:50%;
-    height:100%;
+
+.heading h1{
+    color: aquamarine;
+    font-size: 55px;
+    text-align: center;
+    margin-top: 35px;
+    background-color: rgb(247, 235, 182);
 }
-p,h1{
-    color: black;
+.container{
+    background-color:rgb(247, 235, 182);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 65px auto;
 }
-#features{
+
+.hero-content{
+    flex:1;
+    width: 600px;
+    margin: 0px 25px;
+    animation: fadeInUp 2s ease;
+}
+
+.hero-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 40px;
+    color: #666;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.hero-content button{
+    display: inline-block;
+    background-color: #ff4500;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-size: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.hero-content button:hover{
+    background-color: #ff6347;
+    transform: scale(1.1);
+}
+
+.hero-content h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.hero-image{
+    flex:1;
+    width: 600px;
+    margin: auto;
+    animation: fadeInRight 2s ease;
+}
+
+img{
     width: 100%;
-    padding: 50px 35px;
-}
-.para{
-    font-family: "Josefin Sans", Helvetica, Arial, Lucida, sans-serif;
-}
-.features-img{
-    flex-basis: 100%;
-    margin:auto;
-
-}
-.features-img img{
-    width:70%;
+    height: auto;
     border-radius: 10px;
 }
-div{
-    display: inline-block;
+@media screen and (max-width:768px){
+    .heading h1{
+        font-size: 45px;
+        margin-top: 30px;
+    }
+    .hero{
+        margin: 0px;
+    }
+    .container{
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px 40px;
+    }
+    .hero-content{
+        width: 100%;
+        margin: 35px 0px;
+    }
+    .hero-content h2{
+        font-size: 30px;
+    }
+    .hero-content p{
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+    .hero-content button{
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+    .hero-image{
+        width: 100%;
+    }
+}
 
+@keyframes fadeInUp{
+    0%{
+        opacity: 0;
+        transform: translate(50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
+}
+
+@keyframes fadeInRight{
+    0%{
+        opacity: 0;
+        transform: translate(-50px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0px);
+    }
 }
