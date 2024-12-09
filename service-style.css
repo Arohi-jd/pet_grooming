@@ -4,7 +4,11 @@
     justify-content: center; 
     align-items: center; 
     text-align: center; 
+<<<<<<< Updated upstream
     background-color: rgb(247, 235, 182);
+=======
+    background-color: rgba(191, 255, 0, 0.286);
+>>>>>>> Stashed changes
 }
 
 .title-text p {
