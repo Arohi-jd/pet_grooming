@@ -24,12 +24,14 @@ a {
     margin-bottom:20px;
     background-color: aliceblue;
     gap:30px;
+
 }
 
 .logo {
     color: rgb(34, 77, 194);
     font-size: 1.5rem;
     font-weight: bold;
+    
 }
 
 .nav-links {
@@ -39,11 +41,13 @@ a {
     font-size:20px;
     font-weight:bold;
     font-family:'Times New Roman', Times, serif;
+    
 }
 
 
 .nav-links li a {
     color:rgb(20, 68, 140);
+    transition: 0.3s;
 }
 
 .nav-links li a:hover {
@@ -53,6 +57,7 @@ a {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   border-radius:10px;
   padding:10px;
+  transition: 0.3s;
 }
 
 .first-content{
@@ -256,95 +261,6 @@ input[type="submit"]:hover {
     color: red;
 }
 
-
-
-
-
-/* Footer Styles */
-.footer1 {
-    background-color: #333;
-    color: #fff;
-    padding: 60px 0;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.footer-row {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.footer-col {
-    flex: 1;
-    margin: 10px;
-    max-width: 250px;
-}
-
-.footer-col h3 {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f39c12;
-    text-transform: uppercase;
-}
-
-.footer-col p, .footer-col ul, .footer-col li {
-    font-size: 16px;
-    margin-bottom: 10px;
-}
-
-.footer-col ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.footer-col ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer-col ul li a:hover {
-    color: #f39c12;
-    text-decoration: underline;
-}
-
-/* Social Media Icons */
-.social-links a {
-    display: inline-block;
-    margin: 0 10px;
-    font-size: 24px;
-    color: #fff;
-    transition: transform 0.3s;
-}
-
-.social-links a:hover {
-    color: #f39c12;
-    transform: scale(1.2);
-}
-
-.footer-bottom {
-    margin-top: 30px;
-    font-size: 14px;
-}
-
-/* Responsive Footer */
-@media (max-width: 768px) {
-    .footer-col {
-        flex: 1 1 100%;
-        max-width: 100%;
-    }
-}
 
 
 
