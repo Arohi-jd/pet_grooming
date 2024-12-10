@@ -81,6 +81,11 @@ hr{
     margin: 15px auto;
     width:60%;
 }
+
+.service-desc p{
+    font-size: 14px;
+}
+
 .single-service:hover .service-desc{
     bottom: 40%;
     opacity: 1;
