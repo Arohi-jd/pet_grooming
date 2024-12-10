@@ -11,11 +11,10 @@
 }
 
 .heading h1{
-    color: aquamarine;
+    color:rgb(46, 46, 134);
     font-size: 55px;
     text-align: center;
     margin-top: 35px;
-    background-color: rgb(247, 235, 182);
 }
 .container{
     background-color:rgb(247, 235, 182);
